@@ -54,8 +54,8 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
       });
     fromEvent(window, 'keydown')
       .pipe(takeUntil(this.destroy$))
-      .subscribe((event: KeyboardEvent) => {
-        switch (event.key) {
+      .subscribe((event: Event) => {
+        switch ((event as KeyboardEvent).key) {
           case 'ArrowLeft':
             this.onBack();
             break;
@@ -95,7 +95,7 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
     }
     if (action === 'enter') {
       try {
-        await this.host.nativeElement.requestFullscreen();
+        await this.host?.nativeElement.requestFullscreen();
       } catch { }
     }
     if (this.isFullscreen && document.fullscreenElement) {
@@ -106,7 +106,7 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
       }
     } else {
       try {
-        await this.host.nativeElement.requestFullscreen();
+        await this.host?.nativeElement.requestFullscreen();
       } catch (error) {
         console.debug('Failed to enter fullscreen mode');
       }
