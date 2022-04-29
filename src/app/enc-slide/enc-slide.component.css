@@ -1,15 +1,15 @@
 :host {
   display: flex;
-  font-size: var(--enc-slide-font-size);;
+  font-size: var(--enc-slide-font-size);
 }
 
-:host[kind=Header] {
+:host[kind='Header'] {
   --enc-slide-font-size: 28px;
   --enc-slide-title-color: #ff564d;
   --enc-slide-text-color: #fff;
   --enc-slide-title-txt-al: center;
   --enc-slide-subtitle-txt-al: center;
-  --enc-slide-text-al: center;
+  --enc-slide-text-al: left;
   --enc-slide-content-bg-color: #44197e96;
 }
 
@@ -59,6 +59,4 @@ section.content {
   text-align: var(--enc-slide-text-al);
   margin: 1em 0;
   padding: 2em;
-  text-align: left;
 }
-
