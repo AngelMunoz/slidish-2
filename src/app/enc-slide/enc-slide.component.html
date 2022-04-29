@@ -1,0 +1,19 @@
+<section
+  [class.show]="show"
+  [style.--enc-slide-bg-image]="'url(' + backgroundImage + ')'"
+  [style.--enc-slide-article-margin]="articleMargin"
+>
+  <article>
+    <header>
+      <h2>
+        <ng-content select="[title]"></ng-content>
+      </h2>
+      <h3>
+        <ng-content select="[subtitle]"></ng-content>
+      </h3>
+    </header>
+    <section class="content">
+      <ng-content></ng-content>
+    </section>
+  </article>
+</section>

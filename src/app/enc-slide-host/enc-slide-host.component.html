@@ -1,0 +1,10 @@
+<article #host>
+  <ng-content></ng-content>
+  <nav>
+    <button [disabled]="!canGoBack" (click)="onBack()">Back</button>
+    <button [disabled]="!canGoNext" (click)="onNext()">Next</button>
+    <button (click)="toggleFullscreen()" [hidden]="isFullscreen">
+      Full Screen
+    </button>
+  </nav>
+</article>
