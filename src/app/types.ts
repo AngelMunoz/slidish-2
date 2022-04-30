@@ -2,7 +2,7 @@ export type SlideKind =
   | 'Start'
   | 'Header'
   | 'ItemList'
-  | 'HalfImage'
+  | 'LeftRight'
   | 'Generic';
 
 export type VerticalAlignment = 'top' | 'bottom' | 'center';

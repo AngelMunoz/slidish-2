@@ -1,5 +1,6 @@
 import {
   Component,
+  ContentChildren,
   ElementRef,
   Input,
   OnDestroy,
@@ -24,8 +25,8 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
   activeSlide: number = 0;
   @ViewChild('host')
   host?: ElementRef<HTMLElement>;
-  @ViewChildren(EncSlideComponent)
-  private childSlides?: QueryList<EncSlideComponent> = new QueryList();
+  @ContentChildren(EncSlideComponent)
+  private childSlides?: QueryList<EncSlideComponent>;
 
   private destroy$ = new Subject<void>();
 
@@ -37,7 +38,7 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
   }
 
   get canGoNext() {
-    if (this.activeSlide > (this.childSlides?.length ?? 0)) return false;
+    if (this.activeSlide >= (this.childSlides?.length ?? 0) - 1) return false;
     return true;
   }
 

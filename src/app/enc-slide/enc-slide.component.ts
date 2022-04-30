@@ -25,7 +25,7 @@ export class EncSlideComponent implements OnInit, OnDestroy {
 
   private destroy$ = new Subject<void>();
 
-  constructor(private readonly slides: ActiveSlideService) {}
+  constructor(private readonly slides: ActiveSlideService) { }
 
   ngOnInit() {
     this.slides.activeSlide$
@@ -56,7 +56,7 @@ export class EncSlideComponent implements OnInit, OnDestroy {
       case 'bottom-center':
         return 'auto auto 13em auto';
       case 'bottom-left':
-        return 'auto auto 13em 13em';
+        return 'auto auto 3em 11em';
       case 'bottom-right':
         return 'auto 13em 13em auto';
       case 'center-center':

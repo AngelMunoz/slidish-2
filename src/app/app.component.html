@@ -31,19 +31,136 @@
   </enc-slide>
   <enc-slide
     [index]="2"
-    backgroundImage="/assets/header.png"
-    kind="Header"
-    text-position="top-center"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
   >
-    <span title>What is Angular?</span>
+    <span title>What is Angular great at?</span>
+    <span subtitle>(and what is not <i>that great at</i>)</span>
     <section>
-      <h4>Angular is a Single Page Application (SPA) framework.</h4>
+      <h4>The goodies.</h4>
       <ul>
-        <li>Backed by Google&trade;.</li>
-        <li>One of the three most popular frameworks in the industry.</li>
-        <li>Uses components as its core element.</li>
-        <li>Has Object Oriented Programming features.</li>
+        <li>Convention based.</li>
+        <li>Components at its core.</li>
+        <li>
+          Well defined solutions to common problems. <br />
+          &nbsp;&nbsp;
+          <small>(routing, guards, services, pipes, directives)</small>
+        </li>
+        <li>Ahead of Time Compilation.</li>
+        <li>Excelent to work with teams.</li>
+        <li>Uses RxJs</li>
+        <li>Uses Typescript</li>
       </ul>
+      <h4>The baddies.</h4>
+      <ul>
+        <li>Angular is verbose.</li>
+        <li>Relies heavily on Dependency Injection.</li>
+        <li>It makes it easy to generate big bundles.</li>
+        <li>Slow starting times.</li>
+        <li>Uses RxJs</li>
+        <li>Uses Typescript</li>
+      </ul>
+    </section>
+  </enc-slide>
+  <enc-slide
+    [index]="3"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Components</span>
+    <span subtitle> How do they look like? </span>
+    <section style="display: flex; justify-content: space-evenly">
+      <figure>
+        <img
+          style="height: 465px; width: 540px; object-fit: scale-down"
+          src="/assets/samples/sample-1.png"
+          alt="Angular Component Separated Files"
+        />
+        <caption style="font-size: 16px; font-weight: lighter; display: block">
+          Angular Component Separated Files
+        </caption>
+      </figure>
+      <figure>
+        <img
+          style="height: 465px; width: 540px; object-fit: scale-down"
+          src="/assets/samples/sample-2.png"
+          alt="Angular Single File COmponent Sample"
+        />
+        <caption style="font-size: 16px; font-weight: lighter; display: block">
+          Angular Single File Component Sample
+        </caption>
+      </figure>
+    </section>
+  </enc-slide>
+  <enc-slide
+    [index]="4"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Services</span>
+    <span subtitle>How do they look like?</span>
+    <section style="display: flex; justify-content: space-evenly">
+      <figure>
+        <img
+          style="height: 465px; width: 540px; object-fit: scale-down"
+          src="/assets/samples/sample-3.png"
+          alt="Empty Angular Service"
+        />
+        <caption style="font-size: 16px; font-weight: lighter; display: block">
+          Empty Angular Service
+        </caption>
+      </figure>
+    </section>
+  </enc-slide>
+  <enc-slide
+    [index]="5"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>How do we use those?</span>
+    <span subtitle>Modules, we use modules.</span>
+    <section style="display: flex; justify-content: space-evenly">
+      <figure>
+        <img
+          style="height: 465px; width: 704px; object-fit: contain"
+          src="/assets/samples/sample-4.png"
+          alt="Angular module with all of its components registered"
+        />
+        <caption style="font-size: 16px; font-weight: lighter; display: block">
+          Angular module with all of its components registered
+        </caption>
+      </figure>
+    </section>
+  </enc-slide>
+  <enc-slide
+    [index]="6"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Demo</span>
+    <span subtitle
+      >Let's use those same components and the service together.</span
+    >
+    <section style="display: flex; justify-content: space-evenly">
+      <enc-sample></enc-sample>
+      <enc-sample-two></enc-sample-two>
     </section>
   </enc-slide>
 </enc-slide-host>

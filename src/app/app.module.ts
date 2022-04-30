@@ -5,10 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EncSlideHostComponent } from './enc-slide-host/enc-slide-host.component';
 import { EncSlideComponent } from './enc-slide/enc-slide.component';
+import { EncSampleComponent } from './enc-sample/enc-sample.component';
+import { EncSampleTwoComponent } from './enc-sample-two/enc-sample-two.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, EncSlideHostComponent, EncSlideComponent],
+  declarations: [
+    AppComponent,
+    EncSlideHostComponent,
+    EncSlideComponent,
+    EncSampleComponent,
+    EncSampleComponent,
+    EncSampleTwoComponent],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
