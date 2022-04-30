@@ -23,21 +23,16 @@
 
 
 section:not(.content) {
-  position: absolute;
-  opacity: 0;
   height: 100vh;
   width: 100vw;
   flex-direction: column;
   background-image: var(--enc-slide-bg-image);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: opacity 0.5s cubic-bezier(0.1, 0.2, 0.5, 1) 0s;
 }
 
 section:not(.content).show {
-  position: absolute;
   display: flex;
-  opacity: 1;
 }
 
 article {

@@ -27,6 +27,23 @@ import { SampleService } from '../sample-service.service';
        display: flex;
        justify-content: space-evenly;
      }
+
+    button {
+      background-color: transparent;
+      color: #ff564d;
+      border: 1px solid #cabed4;
+      border-radius: 25px;
+      height: 1.5rem;
+    }
+
+    button:hover {
+      color: #a17ac0;
+    }
+
+    button:disabled {
+      color: #5b5b6e;
+    }
+
     `
   ]
 })

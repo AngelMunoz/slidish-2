@@ -69,6 +69,12 @@ export class EncSlideHostComponent implements OnInit, OnDestroy {
           case 'Escape':
             this.toggleFullscreen('exit');
             break;
+          case '0':
+            this.setSlide(0);
+            break;
+          case 'End':
+            this.setSlide(this.childSlides?.length - 1);
+            break;
         }
       });
   }

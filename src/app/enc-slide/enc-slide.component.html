@@ -1,4 +1,6 @@
 <section
+  *ngIf="show"
+  [@inOutActiveItemAnimation]
   [class.show]="show"
   [style.--enc-slide-bg-image]="'url(' + backgroundImage + ')'"
   [style.--enc-slide-article-margin]="articleMargin"

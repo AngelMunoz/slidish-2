@@ -7,5 +7,26 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 0.5em;
 }
 
+button {
+  background-color: transparent;
+  color: #ff564d;
+  border: 1px solid #cabed4;
+  border-radius: 25px;
+  height: 1.5rem;
+  width: 120px;
+}
+
+button:hover {
+  color: #a17ac0;
+}
+
+button:disabled {
+  color: #5b5b6e;
+}
+
+nav button {
+  margin: 0 0.5em;
+}

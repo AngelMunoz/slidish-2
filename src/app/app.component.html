@@ -14,8 +14,8 @@
   </enc-slide>
   <enc-slide
     [index]="1"
-    backgroundImage="/assets/header.png"
-    kind="Header"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
     text-position="top-center"
   >
     <span title>What is Angular?</span>
@@ -158,9 +158,86 @@
     <span subtitle
       >Let's use those same components and the service together.</span
     >
-    <section style="display: flex; justify-content: space-evenly">
+    <section
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        transform: scale(1.2);
+      "
+    >
       <enc-sample></enc-sample>
       <enc-sample-two></enc-sample-two>
     </section>
+  </enc-slide>
+  <enc-slide
+    [index]="7"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Gotchas in Angular</span>
+    <span subtitle> Common mistakes one can make without realizing it. </span>
+    <ul>
+      <li>Mixing async/await/observables.</li>
+      <li>Not unsubscribing from observables.</li>
+      <li>Putting everything under one module.</li>
+      <li>Creating Mega Components.</li>
+      <li>Using the &quot;<b>any</b>&quot; everywhere.</li>
+    </ul>
+  </enc-slide>
+  <enc-slide
+    [index]="8"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-title-txt-al]="'center'"
+    [style.--enc-slide-subtitle-txt-al]="'center'"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Questions?</span>
+    <span subtitle> any question is fine, even "How's the weather?" </span>
+  </enc-slide>
+  <enc-slide
+    [index]="9"
+    backgroundImage="/assets/generic.png"
+    kind="Generic"
+    text-position="center-center"
+    [style.--enc-slide-content-padding]="'0'"
+  >
+    <span title>Thank You!</span>
+    <span subtitle> Hope you had great time going through this! </span>
+    <ul class="social-networks">
+      <li>
+        <img
+          style="height: 24px; width: 24px"
+          src="/assets/icons/twitter.svg"
+          alt=""
+        />
+        <a href="https://twitter.com/angel_d_munoz" target="_blank">
+          @angel_d_munoz
+        </a>
+      </li>
+      <li>
+        <img
+          style="height: 24px; width: 24px"
+          src="/assets/icons/github.svg"
+          alt=""
+        />
+        <a href="https://github.com/AngelMunoz" target="_blank">
+          @AngelMunoz
+        </a>
+      </li>
+      <li>
+        <img
+          style="height: 24px; width: 24px"
+          src="/assets/icons/devto.svg"
+          alt=""
+        />
+        <a href="https://dev.to/tunaxor" target="_blank">@tunaxor</a>
+      </li>
+    </ul>
   </enc-slide>
 </enc-slide-host>

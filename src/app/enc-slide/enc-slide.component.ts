@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -7,6 +8,14 @@ import type { SlideKind, TextPosition } from '../types';
   selector: 'enc-slide',
   templateUrl: './enc-slide.component.html',
   styleUrls: ['./enc-slide.component.css'],
+  animations: [
+    trigger('inOutActiveItemAnimation', [
+      state('true', style({ opacity: 1 })),
+      state('void', style({ opacity: 0 })),
+      transition(':enter', [animate('700ms ease-in-out')]),
+      transition(':leave', [animate('700ms ease')]),
+    ]),
+  ]
 })
 export class EncSlideComponent implements OnInit, OnDestroy {
   show = false;
